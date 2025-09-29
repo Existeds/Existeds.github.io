@@ -29,34 +29,7 @@ const projects = [
     image: 'assets/Chemistry.png',
     type: 'network-security'
   },
-  {
-    id: 5,
-    title: 'Instant HTB Machine',
-    description: 'HackTheBox penetration testing challenge. Successfully captured both user and root flags through systematic vulnerability exploitation.',
-    image: 'assets/Picture22.png',
-    type: 'network-security'
-  },
-  {
-    id: 6,
-    title: 'Sightless HTB Machine',
-    description: 'HackTheBox penetration testing challenge. Successfully captured both user and root flags through systematic vulnerability exploitation.',
-    image: 'assets/Picture17.png',
-    type: 'network-security'
-  },
-  {
-    id: 7,
-    title: 'Thales 1 HTB Machine',
-    description: 'HackTheBox penetration testing challenge. Successfully captured both user and root flags through systematic vulnerability exploitation.',
-    image: 'assets/Picture13.png',
-    type: 'network-security'
-  },
-  {
-    id: 8,
-    title: 'Kaspro',
-    description: 'Comprehensive vulnerability assessment of Kaspro application. Focus on overall software security.',
-    image: 'assets/Softsec kaspro - Vulnerability Assesment.png',
-    type: 'software-security'
-  }
+  
 ];
 
 // Smooth scrolling for navigation links
