@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WU Instant Network Pentest | Richard Hidayat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project5.css">
+</head>
+<body>
+  <div class="grain-overlay"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-brand">
+      <a href="index.html">RH</a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+    <section class="project-hero" id="overview">
+      <div class="hero-background">
+        <div class="security-grid">
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+        </div>
+      </div>
+      
+      <div class="hero-content">
+        <div class="hero-badge">Network Penetration Testing</div>
+        <h1 class="hero-title">Instant HTB Machine</h1>
+        <p class="hero-description">
+          HackTheBox machine penetration testing challenge focusing on capturing user and root flags 
+          through systematic vulnerability identification and exploitation techniques.
+        </p>
+        
+        <div class="hero-metrics">
+          <div class="metric">
+            <span class="metric-value">HTB</span>
+            <span class="metric-label">Platform</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">2 Flags</span>
+            <span class="metric-label">Captured</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">Pentest</span>
+            <span class="metric-label">Type</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Grid -->
+    <div class="content-grid">
+      <!-- Main Content -->
+      <div class="main-column">
+        <!-- Project Overview -->
+        <section class="content-section">
+          <div class="section-header">
+            <h2>Project Overview</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="overview-content">
+            <p>
+              HackTheBox penetration testing challenge targeting the "Instant" machine. Successfully captured both user and root flags through systematic vulnerability exploitation.
+            </p>
+            
+            <div class="highlight-box">
+              <h3>Key Achievements</h3>
+              <ul>
+                <li>User flag captured</li>
+                <li>Root flag captured</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="content-section" id="gallery">
+          <div class="section-header">
+            <h2>Network Analysis Evidence</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(0)">
+              <img src="assets/Picture22.png" alt="Network Traffic Analysis" />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Traffic Analysis</div>
+                <div class="gallery-subtitle">Network Communication Patterns</div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(1)">
+              <img src="assets/Picture23.png" alt="Protocol Vulnerability" />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Protocol Analysis</div>
+                <div class="gallery-subtitle">Communication Protocol Flaws</div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(2)">
+              <img src="assets/Picture24.png" alt="Security Testing" />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Security Testing</div>
+                <div class="gallery-subtitle">Vulnerability Assessment</div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(3)">
+              <img src="assets/Picture25.png" alt="Exploitation Evidence" />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Exploitation</div>
+                <div class="gallery-subtitle">Proof of Concept</div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(4)">
+              <img src="assets/Picture26.png" alt="Network Monitoring" />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Network Monitoring</div>
+                <div class="gallery-subtitle">Real-time Analysis</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Findings Section -->
+        <section class="content-section" id="findings">
+          <div class="section-header">
+            <h2>Penetration Test Results</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="findings-list">
+            <div class="finding-card critical-risk">
+              <div class="finding-header">
+                <div class="finding-severity">SUCCESS</div>
+                <h3>User Flag Captured</h3>
+              </div>
+              <div class="finding-content">
+                <p>Successfully gained initial access and captured the user flag.</p>
+              </div>
+            </div>
+            
+            <div class="finding-card critical-risk">
+              <div class="finding-header">
+                <div class="finding-severity">SUCCESS</div>
+                <h3>Root Flag Captured</h3>
+              </div>
+              <div class="finding-content">
+                <p>Achieved privilege escalation and captured the root flag.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="info-card">
+          <h3>Project Details</h3>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-label">Platform</span>
+              <span class="info-value">HackTheBox</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Target</span>
+              <span class="info-value">Instant HTB Machine</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Duration</span>
+              <span class="info-value">4 days</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Complexity</span>
+              <span class="info-value">Easy</span>
+            </div>
+          </div>
+          
+          <a href="https://docs.google.com/document/d/1tbdsKc2anC2ohzgmKaJBQYG7wZG-q-Ls1f8FfE9o6bM/edit?usp=sharing" 
+             target="_blank" class="btn-primary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14,2 14,8 20,8"></polyline>
+            </svg>
+            View Full Report
+          </a>
+        </div>
+        
+        <div class="info-card">
+          <h3>Testing Methodology</h3>
+          <div class="methodology-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Reconnaissance & Enumeration</h4>
+                <p>Network discovery and service identification</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Vulnerability Assessment</h4>
+                <p>Systematic security analysis and testing</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>Exploitation & Impact Analysis</h4>
+                <p>Active exploitation and privilege escalation</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4>Documentation</h4>
+                <p>Evidence collection and reporting</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-image" src="" alt="">
+      <div class="lightbox-nav">
+        <button class="lightbox-prev" onclick="prevImage()">&#10094;</button>
+        <button class="lightbox-next" onclick="nextImage()">&#10095;</button>
+      </div>
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    // Lightbox functionality
+    const images = [
+      { src: 'assets/Picture22.png', alt: 'Traffic Analysis - Network Communication Patterns' },
+      { src: 'assets/Picture23.png', alt: 'Protocol Analysis - Communication Protocol Flaws' },
+      { src: 'assets/Picture24.png', alt: 'Security Testing - Vulnerability Assessment' },
+      { src: 'assets/Picture25.png', alt: 'Exploitation - Proof of Concept' },
+      { src: 'assets/Picture26.png', alt: 'Network Monitoring - Real-time Analysis' }
+    ];
+    
+    let currentImageIndex = 0;
+
+    function openLightbox(index) {
+      currentImageIndex = index;
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightbox-image');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+      
+      lightboxImage.src = images[index].src;
+      lightboxImage.alt = images[index].alt;
+      lightboxCaption.textContent = images[index].alt;
+      
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      openLightbox(currentImageIndex);
+    }
+
+    function prevImage() {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      openLightbox(currentImageIndex);
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox.style.display === 'flex') {
+        if (e.key === 'Escape') {
+          closeLightbox();
+        } else if (e.key === 'ArrowRight') {
+          nextImage();
+        } else if (e.key === 'ArrowLeft') {
+          prevImage();
+        }
+      }
+    });
+
+    // Close lightbox when clicking outside image
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeLightbox();
+      }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+</body>
+</html>

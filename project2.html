@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INSTANT HACK THE BOX | Willy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+  <div class="grain-overlay"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-brand">
+      <a href="index.html"></a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+    <section class="project-hero" id="overview">
+      <div class="hero-background">
+        <div class="security-grid">
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+        </div>
+      </div>
+      
+      <div class="hero-content">
+        <div class="hero-badge">Network Penetration Testing</div>
+        <h1 class="hero-title">Instant Hack The Box</h1>
+        <p class="hero-description">
+          Instant is a medium-difficulty Linux machine that chains an Android APK reverse‑engineering step into API exploitation and a final privilege escalation via decrypting stored session data.The player extracts hard‑coded secrets from the APK (an admin JWT and an API domain),uses them to access a Swagger/admin API and trigger an arbitrary‑file‑read, obtains an SSH key or session blob, and then decrypts Solar‑PuTTY session data to recover credentials for full compromise.
+        </p>
+        
+        <div class="hero-metrics">
+          <div class="metric">
+            <span class="metric-value">High</span>
+            <span class="metric-label">Risk Level</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">Data</span>
+            <span class="metric-label">Exposure</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">Hack The Box</span>
+            <span class="metric-label">Platform</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Grid -->
+    <div class="content-grid">
+      <!-- Main Content -->
+      <div class="main-column">
+        <!-- Project Overview -->
+        <section class="content-section">
+          <div class="section-header">
+            <h2>Project Overview</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="overview-content">
+            <p>
+              Network penetration testing of "Instant" Machine from Hack The Box. 
+              The assessment is to indentified security vulnerabilities and to collect the flag.
+            </p>
+            
+            <div class="highlight-box">
+              <h3>Key Findings</h3>
+              <ul>
+                <li>JWT Token Leaked</li>
+                <li>User Data Leaked</li>
+                <li>Privilege Escalation to Root User</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="content-section" id="gallery">
+          <div class="section-header">
+            <h2>Evidence & Screenshots</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(0)">
+              <img src="assets/JWTTOKENINSTANT.png" alt="JWT TOKEN" />
+              <div class="gallery-overlay">
+                <div class="gallery-title">JWT Web Token Leaked.</div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(1)">
+              <img src="assets/Privatekey.png" alt="Private Key" />
+              <div class="gallery-overlay">
+                <div class="gallery-title">User Private Key Leaked.</div>
+              </div>
+            </div>
+        </section>
+
+        <!-- Findings Section -->
+        <section class="content-section" id="findings">
+          <div class="section-header">
+            <h2>Security Findings</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="findings-list">
+            <div class="finding-card high-risk">
+              <div class="finding-header">
+                <div class="finding-severity">HIGH RISK</div>
+                <h3>Unauthorized Access</h3>
+              </div>
+              <div class="finding-content">
+                <p>Access to a system, data, or resource by an entity that does not have permission to use it.</p>
+              </div>
+            </div>
+            
+            <div class="finding-card medium-risk">
+              <div class="finding-header">
+                <div class="finding-severity">MEDIUM RISK</div>
+                <h3>JWT token leaked</h3>
+              </div>
+              <div class="finding-content">
+                <p>A key to do privilege escalation.</p>
+              </div>
+            </div>
+
+            <div class="finding-card medium-risk">
+              <div class="finding-header">
+                <div class="finding-severity">MEDIUM RISK</div>
+                <h3>Sensitive Data Exposure</h3>
+              </div>
+              <div class="finding-content">
+                <p>Users data leaked.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="info-card">
+          <h3>Project Details</h3>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-label">Platform</span>
+              <span class="info-value">Hack The Box</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Target</span>
+              <span class="info-value">Instant Machine</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Duration</span>
+              <span class="info-value">5 days</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Complexity</span>
+              <span class="info-value">Medium</span>
+            </div>
+          </div>
+          
+          <a href="assets/Instant HTB.xlsx" 
+             target="_blank" class="btn-primary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14,2 14,8 20,8"></polyline>
+            </svg>
+            View Full Report
+          </a>
+        </div>
+        
+        <div class="info-card">
+          <h3>Methodology</h3>
+          <div class="methodology-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Analysis</h4>
+                <p>Downloaded and analyzed target application</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Vulnerability Testing</h4>
+                <p>Identified security weaknesses</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>Exploitation</h4>
+                <p>Demonstrated vulnerabilities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-image" src="" alt="">
+      <div class="lightbox-nav">
+        <button class="lightbox-prev" onclick="prevImage()">&#10094;</button>
+        <button class="lightbox-next" onclick="nextImage()">&#10095;</button>
+      </div>
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    // Lightbox functionality
+    const images = [
+      { src: 'assets/JWTTOKENINSTANT.png', alt: 'JWT TOKEN' },
+      { src: 'assets/Privatekey.png', alt: 'Private Key' },
+    ];
+    
+    let currentImageIndex = 0;
+
+    function openLightbox(index) {
+      currentImageIndex = index;
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightbox-image');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+      
+      lightboxImage.src = images[index].src;
+      lightboxImage.alt = images[index].alt;
+      lightboxCaption.textContent = images[index].alt;
+      
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      openLightbox(currentImageIndex);
+    }
+
+    function prevImage() {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      openLightbox(currentImageIndex);
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox.style.display === 'flex') {
+        if (e.key === 'Escape') {
+          closeLightbox();
+        } else if (e.key === 'ArrowRight') {
+          nextImage();
+        } else if (e.key === 'ArrowLeft') {
+          prevImage();
+        }
+      }
+    });
+
+    // Close lightbox when clicking outside image
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeLightbox();
+      }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <span>&copy; 2025 Willy. All rights reserved.</span>
+    </div>
+  </footer>
+</body>
+</html>
