@@ -29,6 +29,14 @@ const projects = [
     image: 'assets/Chemistry.png',
     type: 'network-security'
   },
+
+  {
+    id: 5,
+    title: 'Coffee Portal',
+    description: 'Mobile Penetration Testing to Coffee Portal Application.',
+    image: 'assets/coverCoffeePortal.png',
+    type: 'mobile-security'
+  }
   
 ];
 

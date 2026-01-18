@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Portal| Willy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project5.css">
+</head>
+<body>
+  <div class="grain-overlay"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-brand">
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+    <section class="project-hero" id="overview">
+      <div class="hero-background">
+        <div class="security-grid">
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+        </div>
+      </div>
+      
+      <div class="hero-content">
+        <div class="hero-badge">Mobile Penetration Testing</div>
+        <h1 class="hero-title">Coffee Portal</h1>
+        <p class="hero-description">
+          Comprehensive security testing of a mobile application designed for faculty use, identifying critical vulnerabilities including IDOR and application-level security flaws.
+        </p>
+        
+        <div class="hero-metrics">
+          <div class="metric">
+            <span class="metric-value">High</span>
+            <span class="metric-label">Risk Level</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">Vulnerable</span>
+            <span class="metric-label">IDOR</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">Mobile App</span>
+            <span class="metric-label">Platform</span>
+          </div>
+        </div>
+    </section>
+
+    <!-- Content Grid -->
+    <div class="content-grid">
+      <!-- Main Content -->
+      <div class="main-column">
+        <!-- Project Overview -->
+        <section class="content-section">
+          <div class="section-header">
+            <h2>Project Overview</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="overview-content">
+            <p>
+            This project involved conducting a comprehensive penetration test on the Coffee Portal mobile application, which was developed for faculty use. The assessment focused on identifying security vulnerabilities through static and dynamic analysis techniques.
+            </p>
+            
+            <div class="highlight-box">
+              <h3>Key Findings</h3>
+              <ul>
+                <li>Identified critical vulnerability</li>
+                <li>Documented security flaws with proof-of-concept demonstrations</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="content-section" id="gallery">
+          <div class="section-header">
+            <h2>Exploitation Evidence</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(0)">
+              <img src="assets/IDOR.png" alt="IDOR" />
+              <div class="gallery-overlay">
+                <div class="gallery-title">IDOR Process</div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(1)">
+              <img src="assets/adminbypass.png" alt="User Data Leaked" />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Admin Bypassed</div>
+              </div>
+            </div>
+        </section>
+
+        <!-- Findings Section -->
+        <section class="content-section" id="findings">
+          <div class="section-header">
+            <h2>Security Findings</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="findings-list">
+            <div class="finding-card high-risk">
+              <div class="finding-header">
+                <div class="finding-severity">High</div>
+                <h3>Critical Vulnerability</h3>
+              </div>
+              <div class="finding-content">
+                <p>Identified critical vulnerability allowing unauthorized data access.</p>
+              </div>
+            </div>
+            
+            <div class="finding-card medium-risk">
+              <div class="finding-header">
+                <div class="finding-severity">Others</div>
+                <h3>Security Findings</h3>
+              </div>
+              <div class="finding-content">
+                <p>Multiple additional security issues documented in full report.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="info-card">
+          <h3>Project Details</h3>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-label">Platform</span>
+              <span class="info-value">Android Application</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Type</span>
+              <span class="info-value">Mobile Penetration Testing</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Duration</span>
+              <span class="info-value">3 days</span>
+            </div>
+          </div>
+          
+          <a href="assets/Coffee_Portal_Report.pdf" 
+             target="_blank" class="btn-primary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14,2 14,8 20,8"></polyline>
+            </svg>
+            View Full Report
+          </a>
+        </div>
+        
+        <div class="info-card">
+          <h3>Attack Methodology</h3>
+          <div class="methodology-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Reconnaissance</h4>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Vulnerability Assessment</h4>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>Exploitation & Impact Analysis</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-image" src="" alt="">
+      <div class="lightbox-nav">
+        <button class="lightbox-prev" onclick="prevImage()">&#10094;</button>
+        <button class="lightbox-next" onclick="nextImage()">&#10095;</button>
+      </div>
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    // Lightbox functionality
+    const images = [
+      { src: 'assets/IDOR.png', alt: 'IDOR' },
+      { src: 'assets/adminbypass.png', alt: 'Admin Bypassed' },
+      { src: 'assets/Picture12.png', alt: 'Full Compromise - Complete System Control' }
+    ];
+    
+    let currentImageIndex = 0;
+
+    function openLightbox(index) {
+      currentImageIndex = index;
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightbox-image');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+      
+      lightboxImage.src = images[index].src;
+      lightboxImage.alt = images[index].alt;
+      lightboxCaption.textContent = images[index].alt;
+      
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      openLightbox(currentImageIndex);
+    }
+
+    function prevImage() {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      openLightbox(currentImageIndex);
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox.style.display === 'flex') {
+        if (e.key === 'Escape') {
+          closeLightbox();
+        } else if (e.key === 'ArrowRight') {
+          nextImage();
+        } else if (e.key === 'ArrowLeft') {
+          prevImage();
+        }
+      }
+    });
+
+    // Close lightbox when clicking outside image
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeLightbox();
+      }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <span>&copy; 2025 Willy. All rights reserved.</span>
+    </div>
+  </footer>
+</body>
+</html>
